@@ -1,0 +1,50 @@
+site_name: MkDocs Demo Site
+
+nav: 
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md 
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.bottom
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - content.tabs
+    - content.tabs.link
+    - content.tabs.next
+    - content.tabs.prev
+    - content.tabs.up
+    - content.tabs.down
+    - content.tabs.expand
+
+  language: en
+  palette:
+    primary: black
+    accent: blue
+    toggle:
+      icon: menu
+      color: white
+    search: white
+    search_icon: search
+    search_placeholder: Search
+    search_highlight: blue
+    search_focus: blue
+    search_active: blue
+    search_deactive: white
+    search_deactive_text: black
+    search_deactive_background: white
+    search_deactive_border: white
+    search_deactive_shadow: white
+    search_deactive_radius: 5
+    search_deactive_opacity: 
+    
+   
+
+    
+

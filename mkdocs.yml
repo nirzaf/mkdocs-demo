@@ -32,11 +32,20 @@ theme:
   
   # Enable Dark Mode and provide default (can be light or dark)
   palette:
-    scheme: default
-    toggle:
-      icon: material/toggle-switch-off-outline
-      name: Switch to dark mode
-    primary: white
-    accent: blue
+    # Primary color scheme
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: white
+      accent: blue
 
+    # Dark mode color scheme 
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: black
+      accent: amber
+  
   language: en

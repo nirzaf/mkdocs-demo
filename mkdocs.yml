@@ -7,6 +7,7 @@ nav:
 
 theme:
   name: material
+  logo: Assets/logo.png
   features:
     - navigation.tabs
     - navigation.expand

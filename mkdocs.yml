@@ -1,13 +1,28 @@
 site_name: MkDocs Demo Site
 
 plugins:
-  - blog
+  - rss:
+      enabled: true
+      match_path: blog/posts/.* # (1)!
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags # (2)!
+  - search:
+      enabled: true
+  - blog:
+      authors: true
+  - minify:
+      minify_html: true
 
 nav:
   - Home: index.md
-  - Blog: blog/index.md
+  - Blog: 
+    - blog/index.md
   - About: about.md
   - Contact: contact.md
+  - Test: test.md
 
 theme:
   name: material
@@ -29,6 +44,7 @@ theme:
       - content.tabs.down
       - content.tabs.expand
       - navigation.indexes
+      - pagination
   
   # Enable Dark Mode and provide default (can be light or dark)
   palette:

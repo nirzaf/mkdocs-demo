@@ -1,6 +1,10 @@
 ﻿---
 title: "Effortless Blogging with MkDocs Material: A Developer's Delight"
 date: 2023-10-26
+summary: "Explore how MkDocs Material empowers developers to create and manage blogs effortlessly."
+categories: 
+  - Blogging
+  - MkDocs
 tags:
   - mkdocs
   - blogging

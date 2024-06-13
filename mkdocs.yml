@@ -1,45 +1,42 @@
 site_name: MkDocs Demo Site
 
+plugins:
+  - blog
+
 nav:
   - Home: index.md
+  - Blog: blog/index.md
   - About: about.md
   - Contact: contact.md
 
 theme:
   name: material
   logo: Assets/logo.png
-  features:
-    - navigation.tabs
-    - navigation.expand
-    - navigation.top
-    - navigation.bottom
-    - search.suggest
-    - search.highlight
-    - toc.integrate
-    - content.tabs
-    - content.tabs.link
-    - content.tabs.next
-    - content.tabs.prev
-    - content.tabs.up
-    - content.tabs.down
-    - content.tabs.expand
+  extra:
+    features:
+      - navigation.tabs
+      - navigation.expand
+      - navigation.top
+      - navigation.bottom
+      - search.suggest
+      - search.highlight
+      - toc.integrate
+      - content.tabs
+      - content.tabs.link
+      - content.tabs.next
+      - content.tabs.prev
+      - content.tabs.up
+      - content.tabs.down
+      - content.tabs.expand
+      - navigation.indexes
   
   # Enable Dark Mode and provide default (can be light or dark)
   palette:
-    # Primary color scheme
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: white
-      accent: blue
+    scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+    primary: white
+    accent: blue
 
-    # Dark mode color scheme 
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-      primary: black
-      accent: amber
-  
   language: en
